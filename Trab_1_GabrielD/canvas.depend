@@ -1,0 +1,400 @@
+# depslib dependency file v1.0
+1589222603 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1603974868 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Vector2.h"
+
+1426372440 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1437579942 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426372440 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1589217858 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\vector2.h
+
+1603975055 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"Bola.h"
+	"Relogio.h"
+	"Botao.h"
+
+1589214882 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\bola.h
+	"gl_canvas2d.h"
+
+1193164156 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\relogio.h
+	"gl_canvas2d.h"
+
+1589214891 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\botao.h
+	"gl_canvas2d.h"
+
+1589218349 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\relogio.cpp
+	"Relogio.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1589222603 source:c:\users\gabri\desktop\cg\gl_1_canvasglut\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1650630490 c:\users\gabri\desktop\cg\gl_1_canvasglut\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Vector2.h"
+
+1426372440 c:\users\gabri\desktop\cg\gl_1_canvasglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1437579942 c:\users\gabri\desktop\cg\gl_1_canvasglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426372440 c:\users\gabri\desktop\cg\gl_1_canvasglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1589217858 c:\users\gabri\desktop\cg\gl_1_canvasglut\src\vector2.h
+
+1650976740 source:c:\users\gabri\desktop\cg\gl_1_canvasglut\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"Bmp.h"
+	"gl_canvas2d.h"
+	"Botao.h"
+	"Display16.h"
+
+1589214882 c:\users\gabri\desktop\cg\gl_1_canvasglut\src\bola.h
+	"gl_canvas2d.h"
+
+1193164156 c:\users\gabri\desktop\cg\gl_1_canvasglut\src\relogio.h
+	"gl_canvas2d.h"
+
+1589214891 c:\users\gabri\desktop\cg\gl_1_canvasglut\src\botao.h
+	"gl_canvas2d.h"
+
+1589218349 source:c:\users\gabri\desktop\cg\gl_1_canvasglut\src\relogio.cpp
+	"Relogio.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1650974437 c:\users\gabri\desktop\cg\gl_1_canvasglut\src\display16.h
+	"gl_canvas2d.h"
+	<windows.h>
+
+1604604005 source:c:\users\gabri\desktop\cg\gl_1_canvasglut\src\bmp.cpp
+	"Bmp.h"
+	<string.h>
+
+1531759698 c:\users\gabri\desktop\cg\gl_1_canvasglut\src\bmp.h
+	<stdio.h>
+	<stdlib.h>
+
+1651079422 source:c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\bmp.cpp
+	"Bmp.h"
+	<string.h>
+
+1651067455 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\bmp.h
+	<stdio.h>
+	<stdlib.h>
+
+1651067455 source:c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1651067455 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Vector2.h"
+
+1651067455 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1651067455 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1651067455 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1651067455 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\vector2.h
+
+1651086818 source:c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<iostream>
+	"gl_canvas2d.h"
+	"image.h"
+	"Button.h"
+	"Display16.h"
+
+1651067455 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\botao.h
+	"gl_canvas2d.h"
+
+1651067455 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\display16.h
+	"gl_canvas2d.h"
+	<windows.h>
+
+1651086947 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\image.h
+	"gl_canvas2d.h"
+	"Bmp.h"
+
+1651079453 c:\users\gabri\desktop\cgrepo\cg\gl_1_canvasglut\src\button.h
+	"gl_canvas2d.h"
+
+1651493835 source:c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\bmp.cpp
+	"Bmp.h"
+	<string.h>
+
+1651088671 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\bmp.h
+	<stdio.h>
+	<stdlib.h>
+
+1651088671 source:c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1651088671 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Vector2.h"
+
+1651088671 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1651088671 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1651088671 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1651088671 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\vector2.h
+
+1651592456 source:c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"GameManager.h"
+
+1651530358 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\image.h
+	"gl_canvas2d.h"
+	"Bmp.h"
+	<iostream>
+	<tgmath.h>
+	<vector>
+
+1651436372 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\button.h
+	<functional>
+	"gl_canvas2d.h"
+
+1651437230 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\display16.h
+	"gl_canvas2d.h"
+	<windows.h>
+
+1651439777 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\objectmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<string>
+
+1651444945 source:c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\button.cpp
+	"Button.h"
+
+1651592822 source:c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\image.cpp
+	"Image.h"
+
+1651437231 source:c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\display16.cpp
+	"Display16.h"
+
+1651439580 source:c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\objectmanager.cpp
+	"ObjectManager.h"
+
+1651593304 source:c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\gamemanager.cpp
+	"GameManager.h"
+
+1651592456 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\gamemanager.h
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<iostream>
+	<algorithm>
+	"Image.h"
+	"Button.h"
+	"Display16.h"
+	"ObjectManager.h"
+	"Histogram.h"
+	"gl_canvas2d.h"
+
+1651467153 source:c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\histogram.cpp
+
+1651592456 c:\users\gabri\desktop\cgrepos\cg\cgrepos\cg\gl_1_canvasglut\src\histogram.h
+	"gl_canvas2d.h"
+
+1651622688 source:c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\bmp.cpp
+	"Bmp.h"
+	<string.h>
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\bmp.h
+	<stdio.h>
+	<stdlib.h>
+
+1651622688 source:c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\button.cpp
+	"Button.h"
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\button.h
+	<functional>
+	"gl_canvas2d.h"
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Vector2.h"
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\vector2.h
+
+1651622688 source:c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\display16.cpp
+	"Display16.h"
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\display16.h
+	"gl_canvas2d.h"
+	<windows.h>
+
+1651623628 source:c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\gamemanager.cpp
+	"GameManager.h"
+
+1651623631 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\gamemanager.h
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<iostream>
+	<algorithm>
+	"Image.h"
+	"Button.h"
+	"Display16.h"
+	"ObjectManager.h"
+	"Histogram.h"
+	"gl_canvas2d.h"
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\image.h
+	"gl_canvas2d.h"
+	"Bmp.h"
+	<iostream>
+	<tgmath.h>
+	<vector>
+
+1651622688 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\objectmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<string>
+
+1651628548 c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\histogram.h
+	"gl_canvas2d.h"
+
+1651622688 source:c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1651622688 source:c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\histogram.cpp
+
+1651624255 source:c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\image.cpp
+	"Image.h"
+
+1651623613 source:c:\users\odomenico\desktop\cgrepo\cg\cgrepos\cg\gl_1_canvasglut\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"GameManager.h"
+
