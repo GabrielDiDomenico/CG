@@ -398,3 +398,104 @@
 	<GL/freeglut_ext.h>
 	"GameManager.h"
 
+1651493835 source:c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\bmp.cpp
+	"Bmp.h"
+	<string.h>
+
+1651088671 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\bmp.h
+	<stdio.h>
+	<stdlib.h>
+
+1651444945 source:c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\button.cpp
+	"Button.h"
+
+1651436372 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\button.h
+	<functional>
+	"gl_canvas2d.h"
+
+1651088671 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Vector2.h"
+
+1651088671 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\include\gl\glut.h
+	"freeglut_std.h"
+
+1651088671 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1651088671 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1651088671 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\vector2.h
+
+1651611938 source:c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\display16.cpp
+	"Display16.h"
+
+1651610986 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\display16.h
+	"gl_canvas2d.h"
+	<windows.h>
+	<chrono>
+	<ctime>
+	<iostream>
+
+1651088671 source:c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1651467153 source:c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\histogram.cpp
+
+1651602037 source:c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\image.cpp
+	"Image.h"
+
+1651600014 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\image.h
+	"gl_canvas2d.h"
+	"Bmp.h"
+	<iostream>
+	<tgmath.h>
+	<vector>
+
+1651606086 source:c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"GameManager.h"
+
+1651606765 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\gamemanager.h
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<iostream>
+	<algorithm>
+	"Image.h"
+	"Button.h"
+	"Display16.h"
+	"ObjectManager.h"
+	"Histogram.h"
+	"gl_canvas2d.h"
+
+1651439777 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\objectmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<string>
+
+1651606559 c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\histogram.h
+	"gl_canvas2d.h"
+
+1651612030 source:c:\users\gabri\desktop\gabrieldidomenico\cg\cg\trab_1_gabrield\src\gamemanager.cpp
+	"GameManager.h"
+

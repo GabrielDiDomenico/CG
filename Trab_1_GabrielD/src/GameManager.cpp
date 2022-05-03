@@ -3,27 +3,56 @@
 GameManager::GameManager(){
 
     imgManager = new ObjectManager<Image>();
-    imgManager->addObject(new Image(".//gl_1_canvasGlut//resources//img1.BMP",20,20));
-    imgManager->addObject(new Image(".//gl_1_canvasGlut//resources//img2.BMP",200,20));
-    imgManager->addObject(new Image(".//gl_1_canvasGlut//resources//img3.BMP",540,20));
+    imgManager->addObject(new Image(".//Trab_1_GabrielD//img1.BMP",20,20));
+    imgManager->addObject(new Image(".//Trab_1_GabrielD//img2.BMP",200,20));
+    imgManager->addObject(new Image(".//Trab_1_GabrielD//img3.BMP",540,20));
     histo = new Histogram(300,300);
     buttonManager = new ObjectManager<Button>();
-    buttonManager->addObject(new Button(20, 865, 140, 50, "Img1",  [this]() { activeImage(".//gl_1_canvasGlut//resources//img1.BMP"); }));
-    buttonManager->addObject(new Button(20, 810, 140, 50, "Img2", [this]() { activeImage(".//gl_1_canvasGlut//resources//img2.BMP"); }));
-    buttonManager->addObject(new Button(20, 755, 140, 50, "Img3", [this]() { activeImage(".//gl_1_canvasGlut//resources//img3.BMP"); }));
-    buttonManager->addObject(new Button(180, 865, 140, 50, "flip", [this]() { flipImages(); }));
-    buttonManager->addObject(new Button(180, 810, 140, 50, "channel", [this]() { changeChannel(); }));
-    buttonManager->addObject(new Button(180, 755, 140, 50, "grey", [this]() { setGreyscale(); }));
-    buttonManager->addObject(new Button(360, 865, 140, 50, "resize reset", [this]() { resetResImg(); }));
-    buttonManager->addObject(new Button(360, 810, 140, 50, "resize 50%", [this]() { resizeImage(0.5); }));
-    buttonManager->addObject(new Button(360, 755, 140, 50, "resize 25%", [this]() { resizeImage(0.25); }));
+    buttonManager->addObject(new Button(20, 865, 140, 50, "Floresta",  [this]() { activeImage(".//Trab_1_GabrielD//img1.BMP"); }));
+    buttonManager->addObject(new Button(20, 810, 140, 50, "Demon", [this]() { activeImage(".//Trab_1_GabrielD//img2.BMP"); }));
+    buttonManager->addObject(new Button(20, 755, 140, 50, "Lena", [this]() { activeImage(".//Trab_1_GabrielD//img3.BMP"); }));
+    buttonManager->addObject(new Button(180, 865, 140, 50, "Flip V.", [this]() { flipImages('v'); }));
+    buttonManager->addObject(new Button(180, 810, 140, 50, "Canal RGB", [this]() { changeChannel(); }));
+    buttonManager->addObject(new Button(180, 755, 140, 50, "Greyscale", [this]() { setGreyscale(); }));
+    buttonManager->addObject(new Button(360, 865, 140, 50, "Reseta resize", [this]() { resetResImg(); }));
+    buttonManager->addObject(new Button(360, 810, 140, 50, "Resize 50%", [this]() { resizeImage(0.5); }));
+    buttonManager->addObject(new Button(360, 755, 140, 50, "Resize 25%", [this]() { resizeImage(0.25); }));
     buttonManager->addObject(new Button(540, 865, 140, 50, "HistogramR", [this]() { setReadyHistogram('r'); }));
     buttonManager->addObject(new Button(540, 810, 140, 50, "HistogramG", [this]() { setReadyHistogram('g'); }));
     buttonManager->addObject(new Button(540, 755, 140, 50, "HistogramB", [this]() { setReadyHistogram('b'); }));
     buttonManager->addObject(new Button(720, 865, 140, 50, "HistogramL", [this]() { setReadyHistogram('l'); }));
-    buttonManager->addObject(new Button(720, 810, 140, 50, "Close Histogram", [this]() { closeHistogram(); }));
+    buttonManager->addObject(new Button(720, 810, 140, 50, "Close Hist", [this]() { closeHistogram(); }));
+    buttonManager->addObject(new Button(720, 755, 140, 50, "Flip H.", [this]() { flipImages('h'); }));
+    buttonManager->addObject(new Button(900, 865, 140, 50, "Show Digit", [this]() { setDisplay16(); }));
+    buttonManager->addObject(new Button(900, 810, 140, 50, "Close Display", [this]() { closeDisplay16(); }));
     display16 = new Display16();
+    displayDigit = 0;
+    displayReady = false;
     imgMovEnable = false;
+
+}
+
+void GameManager::setDisplay16(){
+
+    display16->setGap(1);
+    display16->setTam(5);
+    display16->setSide(2.5);
+    display16->setPosX(-80);
+    display16->setPosY(980);
+    displayDigit++;
+    if(displayDigit==10)
+        displayDigit=0;
+    displayReady = true;
+
+}
+
+void GameManager::closeDisplay16(){
+    displayReady = false;
+}
+
+void GameManager::printDisplay16(){
+    if(displayReady)
+        display16->Anima(displayDigit);
 
 }
 
@@ -34,7 +63,6 @@ void GameManager::printHistogram(){
                 histo->histogramGraph(i->getImgWidth(), i->getImgHeight(), i->getImgData());
             }
         }
-
     }
 }
 
@@ -121,16 +149,24 @@ void GameManager::activeImage(const char* imgName){
 
 }
 
-void GameManager::flipImages(){
+void GameManager::flipImages(char direction){
 
     for(Image* i : imgManager->Objects){
+        if(direction == 'v'){
+            if(i->isSelected() && !i->isVFlipped()){
+                i->flipVImg(true);
+            }else if(i->isSelected() && i->isVFlipped()){
+                i->flipVImg(false);
+            }
+        }else{
 
-        if(i->isSelected() && !i->isFlipped()){
-            i->flipImg(true);
+            if(i->isSelected() && !i->isHFlipped()){
+                i->flipHImg(true);
+            }else if(i->isSelected() && i->isHFlipped()){
+                i->flipHImg(false);
+            }
         }
-        else if(i->isSelected() && i->isFlipped()){
-            i->flipImg(false);
-        }
+
     }
 
 }

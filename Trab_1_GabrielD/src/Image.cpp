@@ -9,7 +9,8 @@ Image::Image(const char *imgName, int ix, int iy){
     name = imgName;
     active = false;
     selected = false;
-    flip = false;
+    flipV = false;
+    flipH = false;
     x = ix;
     y = iy;
     dx = 0;
@@ -81,23 +82,36 @@ void Image::printImage(int mx = 0, int my = 0){
     else
         CV::translate(x,y);
 
-
-
     for(float y=0;y<height;y++)
     for(float x=0;x<width*3;x=x+3){
-        if(flip){
+        if(flipV || flipH){
+            if(flipH){
 
-            int pos = y*bytesPerLine + (bytesPerLine - 1 - x);
+                int pos = y*bytesPerLine + (bytesPerLine - 1 - x);
 
-            if(greyscale){
-                float grey = ((0.3 * data[pos+1]) + (0.59 * data[pos+2]) + (0.11 * data[pos+0]));
-                CV::color(grey/255,grey/255,grey/255);
+                if(greyscale){
+                    float grey = ((0.3 * data[pos+1]) + (0.59 * data[pos+2]) + (0.11 * data[pos+0]));
+                    CV::color(grey/255,grey/255,grey/255);
+                }
+                else{
+                    CV::color((float)(data[pos+1])/255*(channel[0]),(float)(data[pos+2]*channel[1])/255,(float)(data[pos]*channel[2])/255);
+                }
+
+                CV::point(x/3,y);
+            }else{
+                int pos = (bytesPerLine - x) + (y*bytesPerLine);
+                y = height - y;
+                if(greyscale){
+                    float grey = ((0.3 * data[pos+1]) + (0.59 * data[pos+2]) + (0.11 * data[pos+0]));
+                    CV::color(grey/255,grey/255,grey/255);
+                }
+                else{
+                    CV::color((float)(data[pos])/255*(channel[0]),(float)(data[pos+1]*channel[1])/255,(float)(data[pos+2]*channel[2])/255);
+                }
+
+                CV::point(x/3,y);
             }
-            else{
-                CV::color((float)(data[pos+1])/255*(channel[0]),(float)(data[pos+2]*channel[1])/255,(float)(data[pos]*channel[2])/255);
-            }
 
-            CV::point(x/3,y);
         }else{
             int pos = y*bytesPerLine + x;
             if(greyscale){
@@ -112,6 +126,7 @@ void Image::printImage(int mx = 0, int my = 0){
 
             }
 
+            //Se está usando uma placa de vídeo AMD comentar o CV::point e utilizar o CV::rectFill
             //CV::rectFill(x/3,y,(x/3)+1,y+1);
             CV::point(x/3,y);
         }
@@ -133,7 +148,9 @@ bool& Image::isSelected(){ return selected;}
 
 bool& Image::isActive(){ return active;}
 
-bool& Image::isFlipped(){ return flip;}
+bool& Image::isVFlipped(){ return flipV;}
+
+bool& Image::isHFlipped(){ return flipH;}
 
 bool& Image::isGreyscale() {return greyscale;}
 
@@ -161,7 +178,9 @@ bool Image::isReady(){
     }
 }
 
-void Image::flipImg(bool value){ flip = value;}
+void Image::flipVImg(bool value){ flipV = value;}
+
+void Image::flipHImg(bool value){ flipH = value;}
 
 int Image::getChannel(int i) { return channel[i];}
 

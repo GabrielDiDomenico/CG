@@ -30,7 +30,7 @@ public:
 
     void activeImage(const char* imgName);
 
-    void flipImages();
+    void flipImages(char direction);
 
     void buttonListener(int x, int y);
 
@@ -52,13 +52,20 @@ public:
 
     void closeHistogram();
 
+    void setDisplay16();
+
+    void printDisplay16();
+
+    void closeDisplay16();
+
 private:
 
     ObjectManager<Image> *imgManager;
     ObjectManager<Button> *buttonManager;
     Display16 *display16;
-    bool imgMovEnable,histogramIsReady;
+    bool imgMovEnable,histogramIsReady,displayReady;
     Histogram* histo;
+    int displayDigit;
 
 
 };

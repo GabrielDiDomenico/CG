@@ -36,7 +36,9 @@ public:
 
     bool& isActive();
 
-    bool& isFlipped();
+    bool& isVFlipped();
+
+    bool& isHFlipped();
 
     void setActive(bool value);
 
@@ -52,7 +54,9 @@ public:
 
     bool isReady();
 
-    void flipImg(bool value);
+    void flipVImg(bool value);
+
+    void flipHImg(bool value);
 
     int getChannel(int i);
 
@@ -73,7 +77,7 @@ private:
     const char *name;
     int x,y,dx,dy;
     float width,height;
-    bool active, selected, flip, greyscale;
+    bool active, selected, flipV, flipH, greyscale;
     int channel[3] = {1, 1, 1};
 
 };

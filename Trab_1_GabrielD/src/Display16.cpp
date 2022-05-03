@@ -1,16 +1,20 @@
 #include "Display16.h"
 
-    /*Display16(int g = 5,int s = 185,int pX = 30,int pY=0){
-        gap = g;
-        halfGap = g*0.5;
-        side = s;
-        posX = pX+g;
-        posY = pY+tam*2;
-        cellSize = tam*12;
+    Display16::Display16(){
+        gap = 1;
+        halfGap = gap*0.5;
+        side = 100;
+        posX = 100+gap;
+        posY = 100+20*2;
+        cellSize = 20*12;
         halfCellSize = cellSize*0.5;
-    }*/
+    }
 
-
+    void Display16::setGap(int value){ gap = value; halfGap = gap*0.5;}
+    void Display16::setTam(int value) { tam = value; cellSize = tam*12; halfCellSize = cellSize*0.5;}
+    void Display16::setSide(int value){ side = value; }
+    void Display16::setPosX(int value){ posX = value+gap; }
+    void Display16::setPosY(int value){ posY = value+tam*2; }
 
     void Display16::drawF(int r = 1, int g = 0, int b = 0){
         CV::color(r,g,b);
@@ -93,12 +97,13 @@
         CV::polygonFill(x_dr,y_dr,6); //h
     }
 
-
-
-    void Display16::DrawCells(int numCells=1){
-        int i=26;
-        int idx = 0;
-
+    void Display16::DrawDigit(int idx){
+        if(idx == 10 || idx==32 || idx == 58) return;
+        if(idx > 57){
+            idx -= 55;
+        }else{
+            idx-=48;
+        }
         if((BinaryTable[idx] >> 15 & 1) == 1)
         {
                 drawA1();
@@ -163,13 +168,27 @@
         {
                 drawM();
         }
-
-
-
     }
 
-    void Display16::Anima(){
 
-        DrawCells();
+    void Display16::DrawClock(int number){
+        int idx = number;
+        int auxPosX = posX;
+        int auxPosY = posY;
+        auto givemetime = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+        char* time = ctime(&givemetime);
+        for(int i=0;i<strlen(time);i++){
+            posX += 80;
+            DrawDigit((int)toupper(time[i]));
+
+        }
+        posX = auxPosX;
+        posY = auxPosY;
+    }
+
+    void Display16::Anima(int number){
+
+        DrawClock(number);
+
 
     }
